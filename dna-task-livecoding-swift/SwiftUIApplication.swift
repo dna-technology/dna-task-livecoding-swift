@@ -8,17 +8,14 @@
 import SwiftUI
 
 @main
-struct dna_task_livecoding_swiftApp: App {
-//    let persistenceController = PersistenceController.shared
+struct SwiftUIApplication: App {
     
     var productsModel: ProductsModel = ProductsModel()
-
+    
     var body: some Scene {
         WindowGroup {
             RootView()
                 .environmentObject(productsModel)
-//            ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

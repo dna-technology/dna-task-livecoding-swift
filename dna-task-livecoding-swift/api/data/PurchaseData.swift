@@ -19,7 +19,7 @@ struct PurchaseConfirmRequest{
     var transactionID: String
 }
 
-    struct PurchaseCancelRequest{ var transactionID: String}
+struct PurchaseCancelRequest{ var transactionID: String}
 
 struct PurchaseStatusResponse{
     var transactionID: String
