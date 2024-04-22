@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		854002662BCEBC3D00790D67 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 854002652BCEBC3D00790D67 /* README.md */; };
-		85756F792BCD389D00B2FCFE /* dna_task_livecoding_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85756F782BCD389D00B2FCFE /* dna_task_livecoding_swiftApp.swift */; };
+		85756F792BCD389D00B2FCFE /* SwiftUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85756F782BCD389D00B2FCFE /* SwiftUIApplication.swift */; };
 		85756F7E2BCD389D00B2FCFE /* dna_task_livecoding_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85756F7C2BCD389D00B2FCFE /* dna_task_livecoding_swift.xcdatamodeld */; };
 		85756F822BCD389E00B2FCFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85756F812BCD389E00B2FCFE /* Assets.xcassets */; };
 		85756F862BCD389E00B2FCFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85756F852BCD389E00B2FCFE /* Preview Assets.xcassets */; };
@@ -28,6 +28,18 @@
 		85CC24942BCDB77B001363F2 /* CardReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC24932BCDB77B001363F2 /* CardReaderService.swift */; };
 		85CC24952BCDB77B001363F2 /* CardReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC24932BCDB77B001363F2 /* CardReaderService.swift */; };
 		85CC24982BCDB9CA001363F2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC24972BCDB9CA001363F2 /* RootView.swift */; };
+		DE6AF59A2BD59D74000B4644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AF5992BD59D74000B4644 /* AppDelegate.swift */; };
+		DE6AF59C2BD59D74000B4644 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AF59B2BD59D74000B4644 /* SceneDelegate.swift */; };
+		DE6AF59E2BD59D74000B4644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6AF59D2BD59D74000B4644 /* ViewController.swift */; };
+		DE6AF5A12BD59D74000B4644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6AF59F2BD59D74000B4644 /* Main.storyboard */; };
+		DE6AF5A32BD59D76000B4644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6AF5A22BD59D76000B4644 /* Assets.xcassets */; };
+		DE6AF5A62BD59D76000B4644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6AF5A42BD59D76000B4644 /* LaunchScreen.storyboard */; };
+		DE6AF5AB2BD5A03B000B4644 /* CardReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC24932BCDB77B001363F2 /* CardReaderService.swift */; };
+		DE6AF5AC2BD5A04B000B4644 /* PaymentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC248D2BCDB75D001363F2 /* PaymentData.swift */; };
+		DE6AF5AD2BD5A04B000B4644 /* PurchaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC248C2BCDB75D001363F2 /* PurchaseData.swift */; };
+		DE6AF5AE2BD5A04B000B4644 /* PaymentApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC24852BCDB74F001363F2 /* PaymentApiClient.swift */; };
+		DE6AF5AF2BD5A04B000B4644 /* PurchaseApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC24862BCDB74F001363F2 /* PurchaseApiClient.swift */; };
+		DE6AF5B02BD5A04B000B4644 /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CC24812BCDB726001363F2 /* ProductsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +61,8 @@
 
 /* Begin PBXFileReference section */
 		854002652BCEBC3D00790D67 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		85756F752BCD389D00B2FCFE /* dna-task-livecoding-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dna-task-livecoding-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85756F782BCD389D00B2FCFE /* dna_task_livecoding_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dna_task_livecoding_swiftApp.swift; sourceTree = "<group>"; };
+		85756F752BCD389D00B2FCFE /* SwiftUITarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85756F782BCD389D00B2FCFE /* SwiftUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIApplication.swift; sourceTree = "<group>"; };
 		85756F7D2BCD389D00B2FCFE /* dna_task_livecoding_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dna_task_livecoding_swift.xcdatamodel; sourceTree = "<group>"; };
 		85756F812BCD389E00B2FCFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85756F832BCD389E00B2FCFE /* dna_task_livecoding_swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dna_task_livecoding_swift.entitlements; sourceTree = "<group>"; };
@@ -67,6 +79,15 @@
 		85CC248D2BCDB75D001363F2 /* PaymentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentData.swift; sourceTree = "<group>"; };
 		85CC24932BCDB77B001363F2 /* CardReaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardReaderService.swift; sourceTree = "<group>"; };
 		85CC24972BCDB9CA001363F2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		DE6AF5922BD59CCB000B4644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DE6AF5972BD59D74000B4644 /* UIKitTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6AF5992BD59D74000B4644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE6AF59B2BD59D74000B4644 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE6AF59D2BD59D74000B4644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE6AF5A02BD59D74000B4644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE6AF5A22BD59D76000B4644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE6AF5A52BD59D76000B4644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE6AF5A72BD59D76000B4644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +112,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE6AF5942BD59D74000B4644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,6 +129,7 @@
 				85756F772BCD389D00B2FCFE /* dna-task-livecoding-swift */,
 				85756F8E2BCD389E00B2FCFE /* dna-task-livecoding-swiftTests */,
 				85756F982BCD389E00B2FCFE /* dna-task-livecoding-swiftUITests */,
+				DE6AF5982BD59D74000B4644 /* UIKitTarget */,
 				85756F762BCD389D00B2FCFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,9 +137,10 @@
 		85756F762BCD389D00B2FCFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85756F752BCD389D00B2FCFE /* dna-task-livecoding-swift.app */,
+				85756F752BCD389D00B2FCFE /* SwiftUITarget.app */,
 				85756F8B2BCD389E00B2FCFE /* dna-task-livecoding-swiftTests.xctest */,
 				85756F952BCD389E00B2FCFE /* dna-task-livecoding-swiftUITests.xctest */,
+				DE6AF5972BD59D74000B4644 /* UIKitTarget.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,11 +148,12 @@
 		85756F772BCD389D00B2FCFE /* dna-task-livecoding-swift */ = {
 			isa = PBXGroup;
 			children = (
+				DE6AF5922BD59CCB000B4644 /* Info.plist */,
 				85CC24962BCDB9BD001363F2 /* views */,
 				85CC24922BCDB768001363F2 /* card */,
 				85CC24842BCDB742001363F2 /* api */,
 				85CC24802BCDB6FC001363F2 /* viewmodel */,
-				85756F782BCD389D00B2FCFE /* dna_task_livecoding_swiftApp.swift */,
+				85756F782BCD389D00B2FCFE /* SwiftUIApplication.swift */,
 				85756F812BCD389E00B2FCFE /* Assets.xcassets */,
 				85756F832BCD389E00B2FCFE /* dna_task_livecoding_swift.entitlements */,
 				85756F7C2BCD389D00B2FCFE /* dna_task_livecoding_swift.xcdatamodeld */,
@@ -194,17 +225,39 @@
 		85CC24962BCDB9BD001363F2 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				85CC24972BCDB9CA001363F2 /* RootView.swift */,
+				DE6AF5882BD59197000B4644 /* swiftUi */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		DE6AF5882BD59197000B4644 /* swiftUi */ = {
+			isa = PBXGroup;
+			children = (
+				85CC24972BCDB9CA001363F2 /* RootView.swift */,
+			);
+			path = swiftUi;
+			sourceTree = "<group>";
+		};
+		DE6AF5982BD59D74000B4644 /* UIKitTarget */ = {
+			isa = PBXGroup;
+			children = (
+				DE6AF5992BD59D74000B4644 /* AppDelegate.swift */,
+				DE6AF59B2BD59D74000B4644 /* SceneDelegate.swift */,
+				DE6AF59D2BD59D74000B4644 /* ViewController.swift */,
+				DE6AF59F2BD59D74000B4644 /* Main.storyboard */,
+				DE6AF5A22BD59D76000B4644 /* Assets.xcassets */,
+				DE6AF5A42BD59D76000B4644 /* LaunchScreen.storyboard */,
+				DE6AF5A72BD59D76000B4644 /* Info.plist */,
+			);
+			path = UIKitTarget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85756F742BCD389D00B2FCFE /* dna-task-livecoding-swift */ = {
+		85756F742BCD389D00B2FCFE /* SwiftUITarget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85756F9F2BCD389E00B2FCFE /* Build configuration list for PBXNativeTarget "dna-task-livecoding-swift" */;
+			buildConfigurationList = 85756F9F2BCD389E00B2FCFE /* Build configuration list for PBXNativeTarget "SwiftUITarget" */;
 			buildPhases = (
 				85756F712BCD389D00B2FCFE /* Sources */,
 				85756F722BCD389D00B2FCFE /* Frameworks */,
@@ -214,9 +267,9 @@
 			);
 			dependencies = (
 			);
-			name = "dna-task-livecoding-swift";
+			name = SwiftUITarget;
 			productName = "dna-task-livecoding-swift";
-			productReference = 85756F752BCD389D00B2FCFE /* dna-task-livecoding-swift.app */;
+			productReference = 85756F752BCD389D00B2FCFE /* SwiftUITarget.app */;
 			productType = "com.apple.product-type.application";
 		};
 		85756F8A2BCD389E00B2FCFE /* dna-task-livecoding-swiftTests */ = {
@@ -255,6 +308,23 @@
 			productReference = 85756F952BCD389E00B2FCFE /* dna-task-livecoding-swiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DE6AF5962BD59D74000B4644 /* UIKitTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE6AF5A82BD59D76000B4644 /* Build configuration list for PBXNativeTarget "UIKitTarget" */;
+			buildPhases = (
+				DE6AF5932BD59D74000B4644 /* Sources */,
+				DE6AF5942BD59D74000B4644 /* Frameworks */,
+				DE6AF5952BD59D74000B4644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIKitTarget;
+			productName = UIKitTarget;
+			productReference = DE6AF5972BD59D74000B4644 /* UIKitTarget.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -276,6 +346,9 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 85756F742BCD389D00B2FCFE;
 					};
+					DE6AF5962BD59D74000B4644 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = 85756F702BCD389D00B2FCFE /* Build configuration list for PBXProject "dna-task-livecoding-swift" */;
@@ -291,7 +364,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85756F742BCD389D00B2FCFE /* dna-task-livecoding-swift */,
+				85756F742BCD389D00B2FCFE /* SwiftUITarget */,
+				DE6AF5962BD59D74000B4644 /* UIKitTarget */,
 				85756F8A2BCD389E00B2FCFE /* dna-task-livecoding-swiftTests */,
 				85756F942BCD389E00B2FCFE /* dna-task-livecoding-swiftUITests */,
 			);
@@ -323,6 +397,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE6AF5952BD59D74000B4644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6AF5A62BD59D76000B4644 /* LaunchScreen.storyboard in Resources */,
+				DE6AF5A32BD59D76000B4644 /* Assets.xcassets in Resources */,
+				DE6AF5A12BD59D74000B4644 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -330,7 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85756F792BCD389D00B2FCFE /* dna_task_livecoding_swiftApp.swift in Sources */,
+				85756F792BCD389D00B2FCFE /* SwiftUIApplication.swift in Sources */,
 				85CC24822BCDB726001363F2 /* ProductsModel.swift in Sources */,
 				85CC24902BCDB75D001363F2 /* PaymentData.swift in Sources */,
 				85CC248E2BCDB75D001363F2 /* PurchaseData.swift in Sources */,
@@ -365,20 +449,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE6AF5932BD59D74000B4644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6AF5AC2BD5A04B000B4644 /* PaymentData.swift in Sources */,
+				DE6AF5AD2BD5A04B000B4644 /* PurchaseData.swift in Sources */,
+				DE6AF5AE2BD5A04B000B4644 /* PaymentApiClient.swift in Sources */,
+				DE6AF5AF2BD5A04B000B4644 /* PurchaseApiClient.swift in Sources */,
+				DE6AF5B02BD5A04B000B4644 /* ProductsModel.swift in Sources */,
+				DE6AF5AB2BD5A03B000B4644 /* CardReaderService.swift in Sources */,
+				DE6AF59E2BD59D74000B4644 /* ViewController.swift in Sources */,
+				DE6AF59A2BD59D74000B4644 /* AppDelegate.swift in Sources */,
+				DE6AF59C2BD59D74000B4644 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		85756F8D2BCD389E00B2FCFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 85756F742BCD389D00B2FCFE /* dna-task-livecoding-swift */;
+			target = 85756F742BCD389D00B2FCFE /* SwiftUITarget */;
 			targetProxy = 85756F8C2BCD389E00B2FCFE /* PBXContainerItemProxy */;
 		};
 		85756F972BCD389E00B2FCFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 85756F742BCD389D00B2FCFE /* dna-task-livecoding-swift */;
+			target = 85756F742BCD389D00B2FCFE /* SwiftUITarget */;
 			targetProxy = 85756F962BCD389E00B2FCFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE6AF59F2BD59D74000B4644 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE6AF5A02BD59D74000B4644 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE6AF5A42BD59D76000B4644 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE6AF5A52BD59D76000B4644 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		85756F9D2BCD389E00B2FCFE /* Debug */ = {
@@ -508,6 +627,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dna-task-livecoding-swift/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -517,7 +637,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -546,6 +666,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dna-task-livecoding-swift/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -555,7 +676,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -661,6 +782,71 @@
 			};
 			name = Release;
 		};
+		DE6AF5A92BD59D76000B4644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UIKitTarget/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalnewagency.UIKitTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE6AF5AA2BD59D76000B4644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UIKitTarget/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalnewagency.UIKitTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -673,7 +859,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85756F9F2BCD389E00B2FCFE /* Build configuration list for PBXNativeTarget "dna-task-livecoding-swift" */ = {
+		85756F9F2BCD389E00B2FCFE /* Build configuration list for PBXNativeTarget "SwiftUITarget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85756FA02BCD389E00B2FCFE /* Debug */,
@@ -696,6 +882,15 @@
 			buildConfigurations = (
 				85756FA62BCD389E00B2FCFE /* Debug */,
 				85756FA72BCD389E00B2FCFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE6AF5A82BD59D76000B4644 /* Build configuration list for PBXNativeTarget "UIKitTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE6AF5A92BD59D76000B4644 /* Debug */,
+				DE6AF5AA2BD59D76000B4644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
