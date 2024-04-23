@@ -12,7 +12,7 @@ class ProductsModel: ObservableObject{
 
     let purchaseApiClient: PurchaseApiClient = PurchaseApiClient()
 
-    @Published var cart: [String:Int64] = [:] {
+    @Published var cart: [CartProduct] = [] {
         didSet {
             DispatchQueue.main.async {
                 self.cart = self.cart
@@ -39,29 +39,35 @@ class ProductsModel: ObservableObject{
 
     func addToCart(productID: String) {
         DispatchQueue.main.async {
-            if (self.cart.keys.contains(productID)) {
-                self.cart[productID] = self.cart[productID]! + 1
+            if (self.cart.map{ $0.productID }.contains(productID)) {
+                let cartProduct = self.cart.first{ $0.productID == productID }
+                if(cartProduct != nil) {
+                    cartProduct!.amount = cartProduct!.amount + 1
+                }
             } else {
-                self.cart[productID] = 1
+                self.cart.append(CartProduct(productID: productID, amount: 1))
             }
         }
     }
     
     func removeFromCart(productID: String) {
         DispatchQueue.main.async {
-            let count = self.cart[productID]
-        
-            if (count ?? 0 > 1) {
-                self.cart[productID] = self.cart[productID]! - 1
-            } else if (count ?? 0 == 1) {
-                self.cart.removeValue(forKey: productID)
+            let cartProduct = self.cart.first{ $0.productID == productID }
+            if(cartProduct != nil) {
+                let count = cartProduct?.amount
+                
+                if (count ?? 0 > 1) {
+                    cartProduct!.amount = cartProduct!.amount - 1
+                } else if (count ?? 0 == 1) {
+                    self.cart.removeAll{ $0.productID == productID }
+                }
             }
         }
     }
     
     func cartItemsCount() -> Int64 {
         return cart
-            .values
+            .map{ $0.amount}
             .reduce(0, +)
     }
 }

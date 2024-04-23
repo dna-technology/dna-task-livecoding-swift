@@ -37,20 +37,20 @@ class PurchaseApiClient {
 
         do {
             var totalPrice: Double = 0
-            for entry in purchaseRequest.order {
-                guard let orderedProduct = productList.first(where: { $0.productID == entry.key }) else {
+            for cartProduct in purchaseRequest.order {
+                guard let orderedProduct = productList.first(where: { $0.productID == cartProduct.productID }) else {
                     throw PurchaseError(message: "Product not found")
                 }
 
-                if entry.value <= 0 {
+                if cartProduct.amount <= 0 {
                     throw PurchaseError(message: "Not allowed to order non-positive number of items")
                 }
 
-                if entry.value > orderedProduct.maxAmount {
+                if cartProduct.amount > orderedProduct.maxAmount {
                     throw PurchaseError(message: "Not allowed to order more than maxAmount")
                 }
 
-                totalPrice += Double(entry.value) * orderedProduct.unitNetValue * (1.0 + orderedProduct.tax)
+                totalPrice += Double(cartProduct.amount) * orderedProduct.unitNetValue * (1.0 + orderedProduct.tax)
             }
 
             return PurchaseResponse(order: purchaseRequest.order, transactionID: UUID().uuidString, transactionStatus: .INITIATED)
@@ -67,16 +67,16 @@ class PurchaseApiClient {
 
         do {
             var sum: Double = 0
-            for entry in purchaseRequest.order {
-                guard let orderedProduct = productList.first(where: { $0.productID == entry.key }) else {
+            for cartProduct in purchaseRequest.order {
+                guard let orderedProduct = productList.first(where: { $0.productID == cartProduct.productID }) else {
                     throw PurchaseError(message: "Product not found")
                 }
 
-                if entry.value <= 0 {
+                if cartProduct.amount <= 0 {
                     throw PurchaseError(message: "Not allowed to order non-positive number of items")
                 }
 
-                sum += Double(entry.value) * orderedProduct.unitNetValue * (1.0 + orderedProduct.tax)
+                sum += Double(cartProduct.amount) * orderedProduct.unitNetValue * (1.0 + orderedProduct.tax)
             }
 
             if sum > 100.0 {
@@ -132,6 +132,25 @@ class Product: Hashable {
 
     func toString() -> String {
         return String(format: "%s [ %.2f %s ]", name, unitNetValue * (1.0 + tax), unitValueCurrency)
+    }
+}
+
+class CartProduct: Hashable {
+    
+    static func == (lhs: CartProduct, rhs: CartProduct) -> Bool {
+        return lhs.productID == rhs.productID
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(productID)
+    }
+
+    var productID: String
+    var amount: Int64
+    
+    init(productID: String, amount: Int64) {
+        self.productID = productID
+        self.amount = amount
     }
 }
 
