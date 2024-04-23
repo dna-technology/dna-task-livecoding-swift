@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "85756F742BCD389D00B2FCFE"
-               BuildableName = "SwiftUITarget.app"
-               BlueprintName = "SwiftUITarget"
+               BuildableName = "dna-task-livecoding-swift.app"
+               BlueprintName = "dna-task-livecoding-swift"
                ReferencedContainer = "container:dna-task-livecoding-swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -67,8 +67,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "85756F742BCD389D00B2FCFE"
-            BuildableName = "SwiftUITarget.app"
-            BlueprintName = "SwiftUITarget"
+            BuildableName = "dna-task-livecoding-swift.app"
+            BlueprintName = "dna-task-livecoding-swift"
             ReferencedContainer = "container:dna-task-livecoding-swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,8 +84,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "85756F742BCD389D00B2FCFE"
-            BuildableName = "SwiftUITarget.app"
-            BlueprintName = "SwiftUITarget"
+            BuildableName = "dna-task-livecoding-swift.app"
+            BlueprintName = "dna-task-livecoding-swift"
             ReferencedContainer = "container:dna-task-livecoding-swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

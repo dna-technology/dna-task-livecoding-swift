@@ -61,7 +61,7 @@
 
 /* Begin PBXFileReference section */
 		854002652BCEBC3D00790D67 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		85756F752BCD389D00B2FCFE /* SwiftUITarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85756F752BCD389D00B2FCFE /* dna-task-livecoding-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dna-task-livecoding-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85756F782BCD389D00B2FCFE /* SwiftUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIApplication.swift; sourceTree = "<group>"; };
 		85756F7D2BCD389D00B2FCFE /* dna_task_livecoding_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dna_task_livecoding_swift.xcdatamodel; sourceTree = "<group>"; };
 		85756F812BCD389E00B2FCFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		85756F762BCD389D00B2FCFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85756F752BCD389D00B2FCFE /* SwiftUITarget.app */,
+				85756F752BCD389D00B2FCFE /* dna-task-livecoding-swift.app */,
 				85756F8B2BCD389E00B2FCFE /* dna-task-livecoding-swiftTests.xctest */,
 				85756F952BCD389E00B2FCFE /* dna-task-livecoding-swiftUITests.xctest */,
 				DE6AF5972BD59D74000B4644 /* UIKitTarget.app */,
@@ -255,9 +255,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85756F742BCD389D00B2FCFE /* SwiftUITarget */ = {
+		85756F742BCD389D00B2FCFE /* dna-task-livecoding-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85756F9F2BCD389E00B2FCFE /* Build configuration list for PBXNativeTarget "SwiftUITarget" */;
+			buildConfigurationList = 85756F9F2BCD389E00B2FCFE /* Build configuration list for PBXNativeTarget "dna-task-livecoding-swift" */;
 			buildPhases = (
 				85756F712BCD389D00B2FCFE /* Sources */,
 				85756F722BCD389D00B2FCFE /* Frameworks */,
@@ -267,9 +267,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUITarget;
+			name = "dna-task-livecoding-swift";
 			productName = "dna-task-livecoding-swift";
-			productReference = 85756F752BCD389D00B2FCFE /* SwiftUITarget.app */;
+			productReference = 85756F752BCD389D00B2FCFE /* dna-task-livecoding-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 		85756F8A2BCD389E00B2FCFE /* dna-task-livecoding-swiftTests */ = {
@@ -364,7 +364,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85756F742BCD389D00B2FCFE /* SwiftUITarget */,
+				85756F742BCD389D00B2FCFE /* dna-task-livecoding-swift */,
 				DE6AF5962BD59D74000B4644 /* UIKitTarget */,
 				85756F8A2BCD389E00B2FCFE /* dna-task-livecoding-swiftTests */,
 				85756F942BCD389E00B2FCFE /* dna-task-livecoding-swiftUITests */,
@@ -470,12 +470,12 @@
 /* Begin PBXTargetDependency section */
 		85756F8D2BCD389E00B2FCFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 85756F742BCD389D00B2FCFE /* SwiftUITarget */;
+			target = 85756F742BCD389D00B2FCFE /* dna-task-livecoding-swift */;
 			targetProxy = 85756F8C2BCD389E00B2FCFE /* PBXContainerItemProxy */;
 		};
 		85756F972BCD389E00B2FCFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 85756F742BCD389D00B2FCFE /* SwiftUITarget */;
+			target = 85756F742BCD389D00B2FCFE /* dna-task-livecoding-swift */;
 			targetProxy = 85756F962BCD389E00B2FCFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -859,7 +859,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85756F9F2BCD389E00B2FCFE /* Build configuration list for PBXNativeTarget "SwiftUITarget" */ = {
+		85756F9F2BCD389E00B2FCFE /* Build configuration list for PBXNativeTarget "dna-task-livecoding-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85756FA02BCD389E00B2FCFE /* Debug */,

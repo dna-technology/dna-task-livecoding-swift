@@ -108,7 +108,7 @@ final class dna_task_livecoding_swiftPurchaseAPITests: XCTestCase {
     
     func testWhenInitiateEmptyOrderThenFail() async {
         // given
-        let purchaseRequest = PurchaseRequest(order: [:])
+        let purchaseRequest = PurchaseRequest(order: [])
         
         // when
         let purchaseResponse = await purchaseAPIClient.initiatePurchaseTransaction(purchaseRequest: purchaseRequest)
@@ -119,7 +119,7 @@ final class dna_task_livecoding_swiftPurchaseAPITests: XCTestCase {
     
     func testInitiateOrderWithZeroItemsThenFail() async {
         // given
-        let purchaseRequest = PurchaseRequest(order: ["12345":0])
+        let purchaseRequest = PurchaseRequest(order: [CartProduct(productID: "12345",amount: 0)])
         
         // when
         let purchaseResponse = await purchaseAPIClient.initiatePurchaseTransaction(purchaseRequest: purchaseRequest)
@@ -130,7 +130,7 @@ final class dna_task_livecoding_swiftPurchaseAPITests: XCTestCase {
     
     func testInitiateOrderWithToManyItemsThenFail() async {
         // given
-        let purchaseRequest = PurchaseRequest(order: ["12345":2001])
+        let purchaseRequest = PurchaseRequest(order: [CartProduct(productID: "12345",amount: 2001)])
         
         // when
         let purchaseResponse = await purchaseAPIClient.initiatePurchaseTransaction(purchaseRequest: purchaseRequest)
@@ -141,7 +141,7 @@ final class dna_task_livecoding_swiftPurchaseAPITests: XCTestCase {
     
     func testConfirmrderWithToManyItemsThenFail() async {
         // given
-        let purchaseRequest = PurchaseConfirmRequest(order: ["12348":2001], transactionID: "Tr2")
+        let purchaseRequest = PurchaseConfirmRequest(order: [CartProduct(productID: "12345",amount: 2001)], transactionID: "Tr2")
         
         // when
         let purchaseResponse = await purchaseAPIClient.confirm(purchaseRequest: purchaseRequest)

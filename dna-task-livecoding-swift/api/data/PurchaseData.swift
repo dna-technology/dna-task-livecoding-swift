@@ -7,15 +7,16 @@
 
 import Foundation
 
-struct PurchaseRequest{ var order: [String:Int64]}
+
+struct PurchaseRequest{ var order: [CartProduct] }
 
 struct PurchaseResponse{
-    var order: [String:Int64]
+    var order: [CartProduct]
     var transactionID: String
     var transactionStatus: TransactionStatus}
 
 struct PurchaseConfirmRequest{
-    var order: [String:Int64]
+    var order: [CartProduct]
     var transactionID: String
 }
 
